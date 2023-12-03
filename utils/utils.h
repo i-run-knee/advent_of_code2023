@@ -10,17 +10,5 @@ namespace utils
     int stringToInt(std::string str);
     
     template<class UnaryFunction>
-    UnaryFunction for_each_line(std::string filename, UnaryFunction f)
-    {
-        std::ifstream file;
-        file.open(filename);
-        std::string line;
-        while (std::getline(file, line))
-        {
-            f(line);
-        }
-        file.close();
-        return f;
-    }
-    
+    UnaryFunction for_each_line(std::string filename, UnaryFunction f);
 }
