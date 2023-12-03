@@ -16,7 +16,7 @@ std::unordered_map<char, std::string> color_map =
     {'b', "blue"},
 };
 
-int game_num(std::string& line)
+int game_num(const std::string& line)
 {
     bool possible = true;
     int col_id = line.find(":");

@@ -30,7 +30,7 @@ std::unordered_map<std::string, int> string_num_map =
     {"nine", 9},
 };
 
-int find_num1(std::string line)
+int find_num1(const std::string& line)
 {
     int tens = 10;
     int ones = 1;
@@ -54,7 +54,7 @@ int find_num1(std::string line)
 }
 
 
-int find_num2(std::string line)
+int find_num2(const std::string& line)
 {
     int tens = 10;
     int ones = 1;
