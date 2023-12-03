@@ -40,7 +40,6 @@ int game_num(std::string& line)
         case 'r':
         if (num_cubes > RED)
         {
-            std::cout << "Red" << std::endl;
             return 0;
         }
         case 'g':
